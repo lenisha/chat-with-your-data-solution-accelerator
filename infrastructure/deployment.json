@@ -689,6 +689,9 @@
       "kind": "StorageV2",
       "sku": {
         "name": "Standard_GRS"
+      },
+      "properties": {
+        "allowCrossTenantReplication": false
       }
     },
     {

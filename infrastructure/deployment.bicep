@@ -315,6 +315,10 @@ resource StorageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   sku: {
     name: 'Standard_GRS'
   }
+
+  properties: {
+    allowCrossTenantReplication: false
+  }
 }
 
 resource StorageAccountName_default_BlobContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2021-08-01' = {
